@@ -1,8 +1,8 @@
 {
-  "name": "webpack-ts-bp",
+  "name": "pwa-nasa",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/IgorAntonov/Webpack-TS-BP.git",
+  "repository": "https://github.com/IgorAntonov/NASA-PWA.git",
   "author": "Igor Antonov <in@appkode.ru>",
   "license": "MIT",
   "scripts": {
