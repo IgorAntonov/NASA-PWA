@@ -1,0 +1,6 @@
+export enum StatusAPI {
+  INITIAL = 'INITIAL',
+  LOADING = 'LOADING',
+  SUCCESS = 'SUCCESS',
+  FAILURE = 'FAILURE',
+}

@@ -15,10 +15,10 @@
     },
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "react"
-  ],
+  "globals": {
+    "StatusAPI": false
+  },
+  "plugins": ["@typescript-eslint", "react"],
   "rules": {
     "import/prefer-default-export": 0,
     "import/no-unresolved": 0,
@@ -42,21 +42,12 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".tsx"]
       }
     ]
   },
   "settings": {
-    "import/extensions": [
-      ".js",
-      ".jsx",
-      ".ts",
-      ".tsx"
-    ]
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"]
   },
   "env": {
     "browser": true,

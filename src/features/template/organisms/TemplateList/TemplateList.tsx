@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ModalRoute } from 'react-router-modal'
 
 import { Header } from '../../atoms'
 import { AddInput, TodoItem } from '../../molecules'
@@ -19,10 +18,13 @@ export const TemplateList: React.FC<Props> = ({
   todos,
   addTodo,
   removeTodo,
+  getAPODTrigger,
 }) => (
   <Container>
-    <Header>Typical TODO</Header>
-    <ModalRoute isOpen />
+    <Header>Typicaal TODO</Header>
+    <button type="button" onClick={getAPODTrigger}>
+      TRIGGER
+    </button>
     <AddInput addTodo={addTodo} />
     {todos.map(item => (
       <TodoItem key={item.id} onClick={() => removeTodo(item.id)}>
