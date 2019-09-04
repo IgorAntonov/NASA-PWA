@@ -1,19 +1,15 @@
-import {
-  createAction,
-  createStandardAction,
-  ActionType,
-} from 'typesafe-actions'
+import { createAction, createStandardAction, ActionType } from 'typesafe-actions'
 
 export enum types {
-  TRIGGER = 'getAPOD->TRIGGER',
-  START = 'getAPOD->START',
-  SUCCESS = 'getAPOD->SUCCESS',
-  FAILURE = 'getAPOD->FAILURE',
-  RESET = 'getAPOD->RESET',
+  TRIGGER = 'getAPOD/api->TRIGGER',
+  START = 'getAPOD/api->START',
+  SUCCESS = 'getAPOD/api->SUCCESS',
+  FAILURE = 'getAPOD/api->FAILURE',
+  RESET = 'getAPOD/api->RESET',
 }
 
 export const actions = {
-  trigger: createAction(types.TRIGGER),
+  trigger: createStandardAction(types.TRIGGER)<{ date?: string }>(),
   start: createAction(types.START),
   success: createAction(types.SUCCESS),
   failure: createStandardAction(types.FAILURE)<{ error: object }>(),

@@ -4,12 +4,11 @@ import { combineReducers } from 'redux'
 import { History } from 'history'
 import { connectRouter } from 'connected-react-router'
 
-import { templateReducer } from '@features/template'
-import { apiReducer } from '../api'
+import { apiReducer, apiDataReducer } from '../api'
 
 export const createRootReducer = (history: History) =>
   combineReducers({
     router: connectRouter(history),
-    template: templateReducer,
     api: apiReducer,
+    apiData: apiDataReducer,
   })

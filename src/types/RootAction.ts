@@ -1,4 +1,3 @@
-import { TemplateAction } from '../features/template/actions'
-import { TApiAction } from '../api'
+import { TApiAction, TApiDataAction } from '../api'
 
-export type RootAction = TemplateAction | TApiAction
+export type RootAction = TApiAction | TApiDataAction
