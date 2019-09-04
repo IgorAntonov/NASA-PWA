@@ -6,4 +6,4 @@ import { registerSW } from './serviceWorker'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 
-// registerSW()
+registerSW()
